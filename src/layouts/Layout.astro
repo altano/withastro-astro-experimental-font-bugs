@@ -4,31 +4,38 @@ import { Font } from "astro:assets";
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-		<!-- Fonts -->
-		<Font cssVariable="--font-inter-fontsource" preload />
-		<Font cssVariable="--font-inter-google" preload />
-		<Font cssVariable="--font-inter-bunny" preload />
-		<Font cssVariable="--font-inter-bunny-weight-range" preload />
-		<Font cssVariable="--font-ibm-plex-mono-fontsource" preload />
-		<Font cssVariable="--font-ibm-plex-mono-google" preload />
-		<Font cssVariable="--font-ibm-plex-mono-bunny" preload />
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro - Experimental Font Tests</title>
+    <!-- Fonts -->
+    <Font cssVariable="--font-inter-fontsource" preload />
+    <Font cssVariable="--font-inter-google" preload />
+    <Font cssVariable="--font-inter-bunny" preload />
+    <Font cssVariable="--font-inter-bunny-weight-range-string" preload />
+    <Font cssVariable="--font-inter-bunny-weight-range-numbers" preload />
+    <Font cssVariable="--font-ibm-plex-mono-fontsource" preload />
+    <Font cssVariable="--font-ibm-plex-mono-fontsource-weight-range" preload />
+    <Font cssVariable="--font-ibm-plex-mono-google" preload />
+    <Font cssVariable="--font-ibm-plex-mono-google-weight-range" preload />
+    <Font cssVariable="--font-ibm-plex-mono-bunny" preload />
+    <Font cssVariable="--font-ibm-plex-mono-bunny-weight-range" preload />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 1rem;
+    padding: 0;
+  }
 </style>

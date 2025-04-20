@@ -1,0 +1,8 @@
+{
+  "packages": ["nodejs@22.14.0"],
+  "env": {
+    "DEVBOX_COREPACK_ENABLED": "true",
+    "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD": "1",
+    "PLAYWRIGHT_BROWSERS_PATH": "$DEVBOX_PACKAGES_DIR"
+  }
+}
